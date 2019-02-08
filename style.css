@@ -1,0 +1,36 @@
+body {
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 2rem;
+}
+h1, h2 {
+    margin: 0;
+    color: rgb(58, 121, 240);
+    line-height: 0.75;
+    font-family: 'Major Mono Display', monospace;
+}
+h1 {
+    grid-column: span 6;
+    font-size: 6em;
+}
+h2 {
+    font-size: 4em;
+    font-weight: 500;
+    grid-column: span 2;
+    letter-spacing: -0.5rem;
+}
+p {
+    text-align: justify;
+    color: rgb(58, 121, 240);
+    margin: 0;
+}
+@media (max-width: 1000px) {
+    body {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    h1, h2 {
+        grid-column: 1 / 4;
+    }
+}
